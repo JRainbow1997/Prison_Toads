@@ -1,0 +1,22 @@
+.home {
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    height: 80vh;
+    }
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
+.product{
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 20vw;
+    }
+
+img {
+    max-width: 190px;
+}
