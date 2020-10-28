@@ -1,0 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../components/Navbar.css';
+
+const Navbar = () => {
+    return (
+        <nav>
+            <ul>
+                <h1>Toadstagram</h1>
+                <li><Link to = "/"> Home </Link></li>
+                <li><Link to = "about"> About </Link></li>
+            </ul>
+            <p>hello</p>
+        </nav>
+    )
+}
+export default Navbar;
