@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
+import Post from './components/Post';
+
 
 
 class App extends Component {
@@ -21,17 +19,10 @@ class App extends Component {
   render () {
 
     return (
-      <React.Fragment>
-        
-        <BrowserRouter>        
-          <Navbar basketNumbers = {this.state.basket} />
-          <Switch>
-            <Route exact path = "/" render = {() => <Home addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />} />
-            <Route exact path = "/about" component = {About} />
-          </Switch>
-                
-        </BrowserRouter>
-      </React.Fragment>
+      
+            <Post addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />
+            
+          
     );
   }
 }
