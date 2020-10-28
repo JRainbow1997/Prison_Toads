@@ -1,22 +1,133 @@
-.home {
-    background-color: rgb(240, 240, 240);
-    text-align: center;
-    height: 80vh;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
-.products{
-    display: flex;
-    justify-content: space-evenly;
-    }
-    
-.product{
-    background-color: white;
-    padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 1em;
-    width: 20vw;
-    }
-
-img {
-    max-width: 190px;
+* {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+.post {
+    background-color: rgb(240, 240, 240);
+    height: 500px;
+    background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 0.2em;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+.icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 30px;
+    display: flex;
+    margin: 0 20% 0 20%;
+}
+
+.postTop {
+    display: flex;
+    justify-content: space-between    
+}
+h3 {
+    font-size: 15px;
+    display: flex;
+    line-height: 3;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.meatballMenu {
+    max-width: 30px;
+}
+
+.postDropDown {
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.postPicture {
+    width: 100%;
+    height: auto;
+}
+
+.wartsbutton {
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    font-size: 25px;
+}
+
+[id='toggle-heart'] {
+    position: absolute;
+    left: -100vw;
+}
+
+[for='toggle-heart'] {
+    color: #aab8c2;
+}
+
+[id='toggle-heart']:checked + label {
+    color: #e2264d;
+}
+[for='toggle-heart'] {
+    font-size: 25px;
+    cursor: pointer;
+}
+@keyframes heart { 0%, 17.5% { font-size: 0; } }
+
+[id='toggle-heart']:checked + label {
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
+
+
+.postOptions img {
+    display: block;
+    width: 100%;
+  }
+
+.postOptions {
+    display: flex;
+    font-size:20px;
+}
+
+
+
+.bookmark {
+    margin-left: auto;
+}
+
+.savedComments {
+    display: flex;
+    
+}
+
+.username {
+    font-weight: 600;
+}
+.username:hover {    
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.commentBox {
+    display: flex;
+    border: 1px solid gray;
+    padding: 20px 0 20px 5px;
+}
+
+.comment {
+    border: none;
+}
+
+.postButton {
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    color: blue;
+}
+
+
