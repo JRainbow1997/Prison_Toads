@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Post from './components/Post';
 import Stories from './components/Stories'
-
+import NavBar from './components/NavigationBar/Navbar'
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
   render () {
     return (
       <div>
-        {/* <NavBar /> */}
+        <NavBar />
         <Stories />
         <Post addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />
       </div>
