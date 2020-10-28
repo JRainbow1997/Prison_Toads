@@ -1,0 +1,22 @@
+.sidebar-footer {
+   
+}
+
+.footer-links > li {
+   color: rgba(var(--edc,199,199,199),1);
+   font-size: 11px;
+   font-weight: 400;
+   line-height: 13px;
+   list-style: none;
+   display: inline;
+   cursor: pointer;
+}
+
+.sidebar-footer > p {
+   color: rgba(var(--edc,199,199,199),1);
+   font-size: 11px;
+   font-weight: 400;
+   line-height: 13px;
+   text-transform: uppercase;
+   margin-top: 18px;
+}
