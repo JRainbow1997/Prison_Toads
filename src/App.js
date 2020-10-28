@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import NavBar from './components/NavigationBar/Navbar'
 
 import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 import Wartbutton from './components/Posts/Wartbutton';
-
-
-// import Comment from './components/Posts/Comment'
-// import Post from './components/Posts/Post';
 
 
 class App extends Component {
@@ -15,6 +12,7 @@ class App extends Component {
 
   render() {
     return (
+        <NavBar />
       <div className="insta">
         {/* <nav className="Nav">
           <div className="Nav-menus">
