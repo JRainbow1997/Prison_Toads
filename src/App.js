@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import Post from './components/Post';
-import Stories from './components/Stories'
-import NavBar from './components/NavigationBar/Navbar'
+import Stories from './components/Stories';
+import NavBar from './components/Navbar';
 
 
 class App extends Component {
