@@ -20,6 +20,7 @@ class App extends Component {
   render () {
     return (
       <div>
+        {/* <NavBar /> */}
         <Stories />
         <Post addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />
       </div>
