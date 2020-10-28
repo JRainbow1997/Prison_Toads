@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Stories from './components/Stories';
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
         
         <BrowserRouter>        
           <Navbar basketNumbers = {this.state.basket} />
+          <Stories />
           <Switch>
             <Route exact path = "/" render = {() => <Home addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />} />
             <Route exact path = "/about" component = {About} />
