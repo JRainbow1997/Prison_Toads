@@ -1,5 +1,5 @@
 nav {
-    background-color: rgb(27, 102, 20);
+    background-color: rgb(218, 238, 222);
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
@@ -15,3 +15,11 @@ nav ul li{
 nav li a {
     text-decoration: none;
     }
+input[type="text"]{
+    width: 100px;
+    color: black;
+}
+.insta{
+    width: 10%;
+    height: 5%;
+}
