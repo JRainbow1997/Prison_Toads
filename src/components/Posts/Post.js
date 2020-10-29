@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Home.css';
+import '../components/Post.css';
 import { FaRegComment } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import { FiBookmark } from 'react-icons/fi';
