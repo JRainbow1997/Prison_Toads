@@ -1,4 +1,4 @@
-* {
+.all {
    width: 100%;
    max-width: 293px;
    margin: 0 auto;
@@ -16,8 +16,8 @@
 }
 
 .userInfo > #userProfilePic { /*FLEX ITEM*/
-   width: 56px;
-   height: 56px;
+   min-width: 56px;
+   min-height: 56px;
    border-radius: 50%;
    border: 0.1px solid grey;
    box-sizing: border-box;

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Post from './components/Post';
-import Stories from './components/Stories'
+import Post from './components/Posts/Post';
+import Stories from './components/Stories/Stories';
+import Sidebar from './components/Sidebar/Sidebar';
 
 
 
@@ -22,6 +23,7 @@ class App extends Component {
       <div>
           <Stories />
           <Post addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />
+          <Sidebar />
        </div>     
           
     );
