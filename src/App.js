@@ -4,26 +4,24 @@ import Post from './components/Posts/Post';
 import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 
+import Wartbutton from './components/Posts/Wartbutton';
+import Stories from './components/Stories/Stories'
+// import Comment from './components/Posts/Comment'
+
 
 
 class App extends Component {
 
-  state = {
-    basket: 0
-  }
-
-  addToBasket = () => {
-    this.setState({
-      basket: this.state.basket +1
-    })
-  }
 
   render () {
     return (
       <div>
           <Stories />
-          <Post addToWart= {this.addToBasket} basketNumbers = {this.state.basket} />
+
           <Sidebar />
+
+          <Wartbutton/>
+
        </div>     
           
     );

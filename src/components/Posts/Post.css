@@ -10,11 +10,11 @@
 
 .post {
     background-color: rgb(240, 240, 240);
-    height: 500px;
+    height: 800px;
     background-color: white;
     border: 0.5px solid grey;
     border-radius: 0.2em;
-    width: 25%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -43,67 +43,57 @@ h3 {
     max-width: 30px;
 }
 
-.postDropDown {
+/* .postDropDown {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .postPicture {
     width: 100%;
     height: auto;
 }
 
+
 .wartsbutton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     font-size: 25px;
 }
-
-[id='toggle-heart'] {
-    position: absolute;
-    left: -100vw;
-}
-
-[for='toggle-heart'] {
-    color: #aab8c2;
-}
-
-[id='toggle-heart']:checked + label {
-    color: #e2264d;
-}
-[for='toggle-heart'] {
-    font-size: 25px;
-    cursor: pointer;
-}
-@keyframes heart { 0%, 17.5% { font-size: 0; } }
-
-[id='toggle-heart']:checked + label {
-  will-change: font-size;
-  animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+.wartsbutton:active {
+    transform: scale(1.1);
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(.17, .89, .32, 1.49);
 }
 
 
-.postOptions img {
-    display: block;
-    width: 100%;
-  }
 
-.postOptions {
+.postIcons {
     display: flex;
     font-size:20px;
+    width: 100%;
 }
 
-
-
-.bookmark {
-    margin-left: auto;
-}
-
-.savedComments {
+.icon1-3 {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.bookmark {
+    display: flex;
+    justify-content: end;
+    justify-self: end;
+    align-items: center;
+    padding-left: 55%;
     
+}
+
+
+
+.postDesciption {
+    font-weight: 600;
 }
 
 .username {
@@ -114,20 +104,8 @@ h3 {
     cursor: pointer;
 }
 
-.commentBox {
-    display: flex;
-    border: 1px solid gray;
-    padding: 20px 0 20px 5px;
-}
 
-.comment {
-    border: none;
-}
 
-.postButton {
-    background-color: rgb(255, 255, 255, 0);
-    border: none;
-    color: blue;
-}
+
 
 
