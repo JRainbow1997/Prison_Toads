@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Post from './Post'
 
 
+
 class Wartbutton extends Component {
 
     state = {
