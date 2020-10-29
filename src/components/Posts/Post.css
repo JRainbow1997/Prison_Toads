@@ -2,12 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
 .Post {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
     border-radius: 3px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
     background-color: #fff;
     margin-bottom: 60px;
-    margin-left : 30%;
-    margin-right: 30%;
+    width: 100%;
+    max-width: 614px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 300px;
+    webkit-box-align: stretch
 }
 
 .Post-user {

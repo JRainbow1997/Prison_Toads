@@ -37,6 +37,23 @@
   }
 }
 
+.main {
+  display: flex;
+}
+.stories {
+  width: 60%;
+  padding-left: 25%;
+}
+
+.sidebar {
+  width: 40%;
+  padding-right: 25%;
+}
+
+.post {
+  width: 60%;
+  padding-left: 25%;
+}
 
 /* i.Nav {
   background-color: #fff;

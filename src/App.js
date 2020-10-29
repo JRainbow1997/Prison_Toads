@@ -15,8 +15,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <nav className="Nav">
+      <div className="insta">
+        {/* <nav className="Nav">
           <div className="Nav-menus">
             <div className="Nav-brand">
               <a className="Nav-brand-logo" href="/">
@@ -24,14 +24,18 @@ class App extends Component {
                      </a>
             </div>
           </div>
-        </nav>
-        <Stories />
-
-        <Sidebar />
-
-        <Wartbutton />
-
-
+        </nav> */}
+        <div className="stories">
+          <Stories />
+        </div >
+        <div className="main">
+          <div className="post">
+            <Wartbutton />
+          </div>
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+        </div>
       </div>
 
     );

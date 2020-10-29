@@ -88,7 +88,7 @@ export class Comment extends Component {
     }
     showMore = () => {
         if (this.state.numberOfComments + 1 <= this.state.commentList.length) {
-          this.setState(state => ({ numberOfComments: state.numberOfComments + 1 }));
+          this.setState(state => ({ numberOfComments: state.numberOfComments + this.state.commentList.length }));
         } else {
           this.setState({ numberOfComments: this.state.commentList.length })
         }
@@ -99,7 +99,7 @@ export class Comment extends Component {
                 <ul className="savedComments">
                     <Items className="savedComments" commentList={this.state.commentList} numberOfComments={this.state.numberOfComments}/>
                 </ul>
-                <button className="showMore" onClick={this.showMore}>View all comments</button>
+                <button className="showMore" onClick={this.showMore}>show more</button>
                 <p className="timeAgo">19 HOURS AGO</p>
                 <form className="commentPost" onSubmit={this.addComment}>
                     <input className="comment" placeholder="Add a comment..." type="text" value={this.state.comment} onChange={this.handleInput} />
