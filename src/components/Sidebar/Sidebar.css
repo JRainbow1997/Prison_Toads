@@ -1,4 +1,4 @@
-* {
+.all {
    width: 100%;
    max-width: 293px;
    margin: 0 auto;
@@ -16,8 +16,8 @@
 }
 
 .userInfo > #userProfilePic { /*FLEX ITEM*/
-   width: 56px;
-   height: 56px;
+   min-width: 56px;
+   min-height: 56px;
    border-radius: 50%;
    border: 0.1px solid grey;
    box-sizing: border-box;
@@ -60,6 +60,7 @@
    font-size: 14px;
    color: rgba(var(--f52,142,142,142),1);
    line-height: 14px;
+   
 }
 .suggestionBanner a { /*FLEX ITEM see all*/
    display: block;
@@ -72,4 +73,5 @@
    line-height: 14px;
    text-align: center;
    cursor: pointer;
+   padding-left: 25%;
 }

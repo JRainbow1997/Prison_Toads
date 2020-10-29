@@ -10,10 +10,9 @@ import frog5 from './img/profile-pic-5.png';
 import frog6 from './img/profile-pic-6.png';
 
 
-class Sidebar extends React.Component {
-   state = {}
-   render() { 
-      return (
+const Sidebar = () => {
+   return (
+      <div className="all">
          <div className="sidebarWrap">
 
             <div className="userInfo">
@@ -29,38 +28,43 @@ class Sidebar extends React.Component {
                <a href="">See All</a>
             </span>
 
-            <SidebarUsers 
+            <SidebarUsers
                profilePicSuggestions={frog2}
-               commonFollowers="@userfrog1"
-               commonFollowersLength="9"
+               suggestedUserName="toad_on_the_edge"
+               commonFollowers="@wild_toad"
+               commonFollowersLength="5"
             />
-            <SidebarUsers 
+            <SidebarUsers
                profilePicSuggestions={frog3}
-               commonFollowers="@userfrog2"
-               commonFollowersLength="9"
+               suggestedUserName="Kermy-101"
+               commonFollowers="@miss-piggy-gold"
+               commonFollowersLength="1"
             />
-            <SidebarUsers 
+            <SidebarUsers
                profilePicSuggestions={frog4}
-               commonFollowers="@userfrog3"
+               suggestedUserName="battle-toad-gains"
+               commonFollowers="@zitz87, @pimple-z"
                commonFollowersLength="9"
             />
-            <SidebarUsers 
+            <SidebarUsers
                profilePicSuggestions={frog5}
-               commonFollowers="@userfrog4"
-               commonFollowersLength="9"
+               suggestedUserName="Gentlefrog42"
+               commonFollowers="@Herm77"
+               commonFollowersLength="2"
             />
-            <SidebarUsers 
+            <SidebarUsers
                profilePicSuggestions={frog6}
-               commonFollowers="@userfrog5"
-               commonFollowersLength="9"
+               suggestedUserName="MichiganJ195"
+               commonFollowers="@RRunner49"
+               commonFollowersLength="8"
             />
 
             <SidebarFooter />
-            
+
 
          </div>
-      );
-   }
+      </div>
+   );
 }
- 
+
 export default Sidebar;
