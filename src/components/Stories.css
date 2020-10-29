@@ -16,9 +16,6 @@
 .stories-container::-webkit-scrollbar {
     display: none;
 }
-.stories-container::-webkit-scrollbar-button {
-
-}
 .stories-container img {
     height: 10vh;
     width: 5vw;
