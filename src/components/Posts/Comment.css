@@ -3,17 +3,37 @@
     font-size: 12px;  
 }
 
+.showMore {
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+.commentPost {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid gray;
+    padding: 20px 0 20px 5px;
+}
+    
+
+.comment {
+    border: none;
+}
+
 .postButton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     color: rgb(32, 32, 233, 0.7);
+    
 }
 
-.commentBox {
-    border: 1px solid gray;
-    padding: 20px 0 20px 5px;
+.username {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
 }
-
-.comment {
-    border: none;
+.username:hover {    
+    text-decoration: underline;
+    cursor: pointer;
 }

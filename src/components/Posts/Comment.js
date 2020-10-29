@@ -1,5 +1,5 @@
 import React from 'react';
-import './Comment.css'
+import '../Posts/Comment.css'
 
 class Comment extends React.Component {
 
@@ -49,8 +49,9 @@ class Comment extends React.Component {
 
         return (
             <div className="savedComments">
+                <button className="showMore" onClick={this.showButtonHandler}>Show more comments</button>
+                <p><a  className="username" href="google.com"> Miss piggy </a> So cute! </p>
                 <ul >{this.state.uiComments}</ul>
-                <button onClick={this.showButtonHandler}>Show more comments</button>
                 <div className="commentPost">
                     <input className="comment" placeholder="Add a comment..." type="text" onChange={this.recordCommentHandler} value={this.state.currentComment} />
                     <button className="postButton" onClick={this.addButtonHandler}> Post </button>

@@ -43,12 +43,12 @@ h3 {
     max-width: 30px;
 }
 
-.postDropDown {
+/* .postDropDown {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .postPicture {
     width: 100%;
@@ -67,30 +67,33 @@ h3 {
     animation-timing-function: cubic-bezier(.17, .89, .32, 1.49);
 }
 
-.postOptions img {
-    display: block;
-    width: 100%;
-  }
 
-.postOptions {
+
+.postIcons {
     display: flex;
     font-size:20px;
+    width: 100%;
 }
 
-
-
+.icon1-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
 .bookmark {
-    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    justify-self: end;
+    align-items: center;
+    padding-left: 55%;
+    
 }
+
+
 
 .postDesciption {
     font-weight: 600;
-}
-
-
-
-.hiddenComment {
-    display: none;
 }
 
 .username {
