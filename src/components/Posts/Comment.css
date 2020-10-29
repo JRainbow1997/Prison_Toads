@@ -1,0 +1,19 @@
+.savedComments ul {
+    list-style: none;  
+    font-size: 12px;  
+}
+
+.postButton {
+    background-color: rgb(255, 255, 255, 0);
+    border: none;
+    color: rgb(32, 32, 233, 0.7);
+}
+
+.commentBox {
+    border: 1px solid gray;
+    padding: 20px 0 20px 5px;
+}
+
+.comment {
+    border: none;
+}

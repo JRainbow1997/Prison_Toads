@@ -24,21 +24,23 @@ const Post = (props) => {
                 <div>
                     <img className="postPicture" src="https://cdn131.picsart.com/318968072360201.jpg?type=webp&to=crop&r=256" />
                     <div className="postOptions">
-                        <input id="toggle-heart" type="checkbox" />
-                        <label for="toggle-heart">𓆏</label>
-                        <button className="wartsbutton" onClick= {props.addToWart}>🐸</button>
+
+                        <button type="submit" className="wartsbutton" onClick= {props.addToWart}>🐸</button>
+
                         <p><FaRegComment /></p>
                         <p><FiSend /> </p> 
-                        <p className="bookmark"><FiBookmark /></p> 
+                        <p className="bookmark"><FiBookmark /></p>
+
                     </div>
                  </div>
-                <p><span>{props.basketNumbers}</span>  Warts</p>
 
-                {/* <div className="savedComments">
-                <p className="username">Miss piggy</p>   
-                <p>Just chilling with me and miss piggy</p>
-                </div> */}
+                <p><span>{props.warts}</span>  Warts</p>
+
+                <div className="postDesciption">
+                    <p>Ketmit-Frogs love pride!</p>
+                </div>
                 <Comment />
+                
                                            
             </div>
         </div>            
