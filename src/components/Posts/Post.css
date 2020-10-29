@@ -101,9 +101,11 @@ h3 {
     margin-left: auto;
 }
 
-.savedComments {
-    display: flex;
-    
+.savedComments ul {
+    max-height: 50px;
+    overflow: hidden;
+    /* display: flex; */
+    list-style: none;    
 }
 
 .username {

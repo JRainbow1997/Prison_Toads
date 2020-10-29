@@ -1,8 +1,10 @@
 import React from 'react';
-import '../components/Post.css';
+import '../Posts/Post.css';
+import Comment from './Comment'
 import { FaRegComment } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import { FiBookmark } from 'react-icons/fi';
+
 
 
 const Post = (props) => {
@@ -32,15 +34,12 @@ const Post = (props) => {
                  </div>
                 <p><span>{props.basketNumbers}</span>  Warts</p>
 
-                <div className="savedComments">
+                {/* <div className="savedComments">
                 <p className="username">Miss piggy</p>   
                 <p>Just chilling with me and miss piggy</p>
-                </div>
-
-                <div className="commentBox">
-                    <input className="comment" placeholder="Add a comment..."/>
-                    <button className="postButton">Post</button>
-                </div>                               
+                </div> */}
+                <Comment />
+                                           
             </div>
         </div>            
         
