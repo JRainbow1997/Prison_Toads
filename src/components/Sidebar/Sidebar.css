@@ -60,6 +60,7 @@
    font-size: 14px;
    color: rgba(var(--f52,142,142,142),1);
    line-height: 14px;
+   
 }
 .suggestionBanner a { /*FLEX ITEM see all*/
    display: block;
@@ -72,4 +73,5 @@
    line-height: 14px;
    text-align: center;
    cursor: pointer;
+   padding-left: 25%;
 }
