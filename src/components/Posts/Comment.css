@@ -16,7 +16,7 @@
 .commentPost {
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid gray;
+    border-top:1px solid rgba(var(--b6a,219,219,219),1);
     padding: 20px 0 20px 5px;
 }
     
