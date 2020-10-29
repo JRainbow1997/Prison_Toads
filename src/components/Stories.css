@@ -1,12 +1,11 @@
-.stories-main-container {
+.main-stories-container {
     display: flex;
-    justify-content: center;
     max-width: 600vw;
     max-height: 300vh;
 }
-
 .stories-container {
     display: flex;
+    justify-content: center;
     overflow: scroll;
     height: 15vh;
     width: 40vw;
@@ -16,31 +15,15 @@
 .stories-container::-webkit-scrollbar {
     display: none;
 }
-.stories-container::-webkit-scrollbar-button {
-
-}
-.stories-container img {
-    height: 10vh;
+.image-frame {
+    display: flex;
     width: 5vw;
-}
-.stories-pic {
-    position: relative;
-    width: 20%;
-    height: auto;
+    width: 100%;
     border-radius: 50%;
-    margin: 1%;
-    border: 3px solid #CB3F98;
 }
-.stories-pic:after {
-    position: absolute;
-    background-size: cover;
+.image-frame img {
+    width: 100%;
+    padding: 3%;
     border-radius: 50%;
-    overflow: hidden;
-    content: "";
-    background-color: #fff;
-    width: 10%;
-    top: 1px;
-    left: 1px;
-    width: 10px;
-    height: 10px;
+    background-image: linear-gradient( #CB3F98, #FBB37B);
 }
