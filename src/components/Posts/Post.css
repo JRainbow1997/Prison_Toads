@@ -1,65 +1,72 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
-* {
+.Post {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: #fff;
+    margin-bottom: 60px;
     width: 100%;
+    max-width: 614px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    min-width: 300px;
+    webkit-box-align: stretch
 }
 
-.post {
-    background-color: rgb(240, 240, 240);
-    height: 800px;
-    background-color: white;
-    border: 0.5px solid grey;
-    border-radius: 0.2em;
-    width: 50%;
-    height: 100%;
+.Post-user {
     display: flex;
-    flex-direction: column;
-} 
-.icon {
-    width: 35px;
-    height: 35px;
+    align-items: center;
+    padding: 16px;
+}
+.Post-user-avatar {
+    width: 30px;
+    height: 30px;
+}
+.Post-user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     border: 1px solid;
     border-color: black;
-    border-radius: 30px;
-    display: flex;
-    margin: 0 20% 0 20%;
+}
+.Post-user-nickname {
+    margin-left: 25%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
 }
 
-.postTop {
-    display: flex;
-    justify-content: space-between    
-}
-h3 {
-    font-size: 15px;
-    display: flex;
-    line-height: 3;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.meatballMenu {
+/* .meatballMenu {
     max-width: 30px;
 }
 
-/* .postDropDown {
+.postDropDown {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     display: flex;
     flex-wrap: wrap;
 } */
 
-.postPicture {
+.Post-image-bg {
+    background-color: #efefef;
+}
+.Post-image img {
+    display: block;
     width: 100%;
-    height: auto;
 }
 
-
+ 
 .wartsbutton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
     font-size: 25px;
+    
 }
 .wartsbutton:active {
     transform: scale(1.1);
@@ -67,45 +74,51 @@ h3 {
     animation-timing-function: cubic-bezier(.17, .89, .32, 1.49);
 }
 
-
-
 .postIcons {
     display: flex;
-    font-size:20px;
+    justify-content: space-between;
+    font-size:25px;
     width: 100%;
 }
 
 .icon1-3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 25%;
 }
-.bookmark {
+.FA {
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+/* .bookmark {
     display: flex;
     justify-content: end;
     justify-self: end;
     align-items: center;
-    padding-left: 55%;
+    padding-left: 75%;
     
+} */
+
+.wartsText {
+    padding: 0px 10px 0 10px;
+    font-weight: 600; 
 }
 
-
-
-.postDesciption {
-    font-weight: 600;
+.Post-caption {
+    padding: 0px 5px 0px 5px;
+    margin-left: 5px;
+}
+.Post-caption strong {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
 }
 
-.username {
-    font-weight: 600;
-}
-.username:hover {    
+.Post-caption strong:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-
-
-
 
 
 

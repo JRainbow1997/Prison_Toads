@@ -1,5 +1,7 @@
 .main-stories-container {
     display: flex;
+    justify-content: center;
+    width: 100%;
     max-width: 600vw;
     max-height: 300vh;
 }
