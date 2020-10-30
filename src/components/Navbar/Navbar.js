@@ -6,7 +6,6 @@ import Alex from './images/AGayFrog.png';
 import './Navbar.css';
 
 
-
 const Navbar = () => {
     return (
         <nav>
