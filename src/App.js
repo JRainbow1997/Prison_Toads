@@ -6,7 +6,6 @@ import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 import Wartbutton from './components/Posts/Wartbutton';
 
-
 class App extends Component {
 
 
