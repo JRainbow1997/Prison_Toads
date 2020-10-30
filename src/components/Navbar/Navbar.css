@@ -2,12 +2,19 @@ nav {
     background-color: white;
     display: flex;
     justify-content: space-around; 
-    /* padding: 1% 20% 0.25% 20%; up, right, down, left   */
+    padding-top: 0.75%;
     border-style: none none solid none;
-    border-color: lightgray;
+    border-bottom:1px solid rgba(var(--b6a,219,219,219),1);
     width: 100%;
     position: fixed;
     z-index: 999;
+}
+.insta{
+    width: 125px;
+    padding-left: 44vh;
+
+}.insta:active{
+    opacity: 0.5;
 }
 nav ul {
     display: flex;
@@ -33,22 +40,14 @@ nav ul li{
     text-align: left;
 }.search{
     text-align: center;
-    padding: 0% 15% 0% 15%;   
+    padding: 0%; 
 }
 
 .search-bar {
     filter: grayscale(100%);
 }
-
-.magnifyingGlass{
-    width: 10px;
-    height: 10px;
-}
-.insta{
-    width: 125px;
-
-}.insta:active{
-    opacity: 0.5;
+.links{
+    padding-right: 46vh;
 }
 .profilePic {
     position: center;
