@@ -2,9 +2,11 @@ nav {
     background-color: white;
     display: flex;
     justify-content: space-around; 
-    padding: 1% 20% 0.25% 20%; /* up, right, down, left   */
+    /* padding: 1% 20% 0.25% 20%; up, right, down, left   */
     border-style: none none solid none;
     border-color: lightgray;
+    position: fixed;
+    width: 100%;
     }
 nav ul {
     display: flex;
@@ -31,6 +33,8 @@ input[type="text"]:active{
 }.search{
     text-align: center;
     padding: 0% 15% 0% 15%;
+
+    
 }
 .magnifyingGlass{
     width: 10px;
@@ -38,6 +42,7 @@ input[type="text"]:active{
 }
 .insta{
     width: 125px;
+
 }.insta:active{
     opacity: 0.5;
 }
