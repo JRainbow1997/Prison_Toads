@@ -1,17 +1,51 @@
 nav {
-    background-color: rgb(27, 102, 20);
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
+    justify-content: space-around; 
+    padding: 1% 20% 0.25% 20%; /* up, right, down, left   */
+    border-style: none none solid none;
+    border-color: lightgray;
     }
 nav ul {
     display: flex;
     justify-content: space-around;
-    }
+    width: 250px;
+    padding: 0% 5% 0% 5%;
+    margin-top: 0;
+}
 nav ul li{
     list-style: none;
-    padding: 5px 10px;
-    }
-nav li a {
-    text-decoration: none;
-    }
+    width: 12%;
+}
+input[type="text"]{
+    width: 200px;
+    height: 25px;
+    color: black;
+    text-align: center;
+    background: #fafafa;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+}
+input[type="text"]:active{
+    text-align: left;
+}.search{
+    text-align: center;
+    padding: 0% 15% 0% 15%;
+}
+.magnifyingGlass{
+    width: 10px;
+    height: 10px;
+}
+.insta{
+    width: 125px;
+}.insta:active{
+    opacity: 0.5;
+}
+.profilePic {
+    position: center;
+    height: auto;
+    border-radius: 50%;
+    width: 100%;
+    margin: 1%;
+    border: 1px solid #CB3F98;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './components/NavigationBar/Navbar'
-
+import NavBar from './components/Navbar/Navbar'
 import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 import Wartbutton from './components/Posts/Wartbutton';
@@ -11,9 +10,10 @@ class App extends Component {
 
   render() {
     return (
+      <div>
         <NavBar />
-      <div className="insta">
-        {/* <nav className="Nav">
+        <div className="insta">
+          {/* <nav className="Nav">
           <div className="Nav-menus">
             <div className="Nav-brand">
               <a className="Nav-brand-logo" href="/">
@@ -22,19 +22,19 @@ class App extends Component {
             </div>
           </div>
         </nav> */}
-        <div className="stories">
-          <Stories />
-        </div >
-        <div className="main">
-          <div className="post">
-            <Wartbutton />
+          <div className="stories">
+            <Stories />
           </div>
-          <div className="sidebar">
-            <Sidebar />
+          <div className="main">
+            <div className="post">
+              <Wartbutton />
+            </div>
+            <div className="sidebar">
+              <Sidebar />
+            </div>
           </div>
         </div>
       </div>
-
     );
   }
 }
