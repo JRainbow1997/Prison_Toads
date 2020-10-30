@@ -2,17 +2,17 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600vw;
-    max-height: 300vh;
+    max-width: 600px;
+    max-height: 118vh;
 }
 .stories-container {
     display: flex;
     justify-content: center;
     overflow: scroll;
     height: 15vh;
-    width: 40vw;
     padding: 1%;
-    border: 1px solid gray;
+    border-radius: 3px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
 }
 .stories-container::-webkit-scrollbar {
     display: none;

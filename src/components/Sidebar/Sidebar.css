@@ -1,9 +1,10 @@
 .all {
    width: 100%;
    max-width: 293px;
-   margin: 0 auto;
+   /* margin: 0 auto; */
    padding: 0;
    box-sizing: border-box;
+   position: fixed;
 }
 
 

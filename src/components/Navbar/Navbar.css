@@ -5,9 +5,10 @@ nav {
     /* padding: 1% 20% 0.25% 20%; up, right, down, left   */
     border-style: none none solid none;
     border-color: lightgray;
-    position: fixed;
     width: 100%;
-    }
+    position: fixed;
+    z-index: 999;
+}
 nav ul {
     display: flex;
     justify-content: space-around;
