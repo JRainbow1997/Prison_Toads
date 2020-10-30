@@ -1,40 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: rgba(var(--b3f,250,250,250),1);  
 }
 
 .main {
@@ -43,46 +8,77 @@
 .stories {
   width: 60%;
   padding-left: 25%;
+  padding-top: 30px;
+  margin-bottom: 24px;
 }
 
 .sidebar {
   width: 40%;
-  padding-right: 25%;
+  padding-right: 15%;
+  position: relative;
+  top: -100px;  
 }
 
 .post {
   width: 60%;
   padding-left: 25%;
+  float: left;
+  margin-right: 28px;
+  max-width: 614px;
 }
 
-/* i.Nav {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
-  height: 77px;
-}
-.Nav-menus {
+.navbar {
   display: flex;
-  flex-direction: row;
-  height: 77px;
-  width: 70%;
-  margin: 0 auto;
-  padding: 26px 40px;
-} */
-.Nav-brand-logo {
-  display: block;
-  background-position: -176px 0px;
-  background-image: url(./components/Posts/sprite.png);
-  background-size: 405px 379px;
-  background-repeat: no-repeat;
-  height: 35px;
-  width: 176px;
-  text-indent: -1000%
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@media(max-width:983px){
+  .sidebar{
+    display: none;
+  }
+  .post {
+    width: 64%;
+    padding-left: 18%;
+  }
+  .stories{
+    width: 64%;
+    padding-left: 18%;
+  }
+  .navbar{
+    width: 100%;
+  }
+}
+
+@media(max-width:48px){
+  .sidebar{
+    display: none;
+  }
+  .post {
+    width: 437px;
+  }
+  .stories{
+    width: 347px;
+  }
+  .navbar{
+    width: 100%;
+  }
+}
+
+@media (max-width:414px) {
+  .post {
+    width: 100%;
+    padding: 0;
+  }
+  .stories {
+    width: 100%;
+    padding: 0;
+  }
+  .navbar {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 
