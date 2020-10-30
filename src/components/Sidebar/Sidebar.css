@@ -2,7 +2,7 @@
    width: 100%;
    max-width: 293px;
    /* margin: 0 auto; */
-   padding: 0;
+   padding-top: 3.5%;
    box-sizing: border-box;
    position: fixed;
 }
@@ -17,8 +17,7 @@
 }
 
 .userInfo > #userProfilePic { /*FLEX ITEM*/
-   min-width: 56px;
-   min-height: 56px;
+   width: 3%;
    border-radius: 50%;
    border: 0.1px solid grey;
    box-sizing: border-box;
