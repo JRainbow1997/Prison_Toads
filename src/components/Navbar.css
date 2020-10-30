@@ -1,9 +1,9 @@
 
 nav {
-    background-color: rgb(218, 238, 222);
+    background-color: white;
     display: flex;
     justify-content: space-around;
-    padding: 20px 40px;
+    padding: 0.75% 25% 0.25% 25%; /* up, right, down, left   */
     border-style: none none solid none;
     border-color: lightgray;
     }
@@ -26,6 +26,7 @@ input[type="text"]:active{
     text-align: left;
 }.search{
     text-align: center;
+    padding: 0% 15% 0% 15%;
 }
 .magnifyingGlass{
     width: 10px;

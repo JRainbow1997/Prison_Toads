@@ -17,12 +17,14 @@ const Navbar = () => {
                     src={ Logo }
                 />
             </div>
+            <div/>
             <div class="search">
                 <input 
                     type = "text" 
                     placeholder = "Search"
                 />
             </div>
+            <div />
             <div class = "links">
                 <ul>
                     <li>
