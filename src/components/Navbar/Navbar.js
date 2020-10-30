@@ -4,6 +4,7 @@ import Alex from './images/AGayFrog.png';
 //import Search from './images/search.png'
 //import { Link } from 'react-router-dom';
 import './Navbar.css';
+// import { FiSearch } from "react-icons/fi";
 
 
 const Navbar = () => {
@@ -18,9 +19,11 @@ const Navbar = () => {
             </div>
             <div/>
             <div class="search">
-                <input 
+            {/* <FiSearch />
+            <i class="fas fa-search"></i> */}
+                <input className="search-bar" 
                     type = "text" 
-                    placeholder = "Search"
+                    placeholder = "🔍  Search"
                 />
             </div>
             <div />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Comment.css'
+
 export class Comment extends Component {
     state = {
         commentList: [],
