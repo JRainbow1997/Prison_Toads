@@ -5,9 +5,9 @@
    margin-top: 18px;
    margin-bottom: 10px;
 }
-
 .suggestedUsers > #suggestedProfilePic { /*FLEX ITEM*/
-   width: 15%;
+   width: 3em;
+   height: 3em;
    border-radius: 50%;
    border: 0.1px solid grey;
    box-sizing: border-box;
@@ -16,11 +16,9 @@
    cursor: pointer;
    flex: 1;
 }
-
 img {
    cursor: pointer;
 }
-
 .suggestedUsersText a { /*FLEX ITEM*/
    text-decoration: none;
    color: rgba(var(--i1d,38,38,38),1);
@@ -29,25 +27,23 @@ img {
    flex: 3;
    padding-right: 10px;
 }
-
 a:hover {
    text-decoration: underline;
 }
-
 .suggestedUsersText > p { /*FLEX ITEM*/
    color: rgba(var(--f52,142,142,142),1);
    margin-left: 5px;
    font-size: 12px;
    flex: 3;
    padding-right: 10px;
+   margin-top: 0;
 }
-
 button { /*FLEX ITEM*/
    background: none;
    border: none;
    cursor: pointer;
    font-size: 12px;
-   line-height: 14px;
+   line-height: 1em;
    font-weight: 600;
    color: rgba(var(--d69,0,149,246),1);
    flex: 1;

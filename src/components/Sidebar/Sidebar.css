@@ -6,8 +6,6 @@
    box-sizing: border-box;
    position: fixed;
 }
-
-
 .userInfo { /*FLEX CONTAINER*/
    display: flex;
    justify-content: space-between;
@@ -15,7 +13,6 @@
    margin-top: 18px;
    margin-bottom: 10px;
 }
-
 .userInfo > #userProfilePic { /*FLEX ITEM*/
    width: 3%;
    border-radius: 50%;
@@ -25,11 +22,9 @@
    margin-right: 5px;
    flex: 1;
 }
-
 .sidebarWrap {
    margin: 20px;
 }
-
 .userInfoText > a { /*FLEX ITEM*/
    text-decoration: none;
    color: rgba(var(--i1d,38,38,38),1);
@@ -39,38 +34,34 @@
 .userInfoText a:hover {
    text-decoration: underline;
 }
- 
 .userInfoText > p { /*FLEX ITEM*/
    color: rgba(var(--f52,142,142,142),1);
    margin-left: 5px;
 }
-
-
 .suggestionBanner { /*FLEX CONTAINER*/
    display:flex;
    justify-content: space-between;
+   align-items: center;
    padding-bottom: 4px;
    padding-top: 4px;
 }
-
 .suggestionBanner p { /*FLEX ITEM suggested for you*/
    display: block;
-   flex: 5;
+   flex: 3;
    font-weight: 600;
    font-size: 14px;
    color: rgba(var(--f52,142,142,142),1);
-   line-height: 14px;
-   
+   /* line-height: 1em; */
 }
 .suggestionBanner a { /*FLEX ITEM see all*/
    display: block;
    flex: 1;
-   width: 100%;
+   width: 50px;
    text-decoration: none;
    font-weight: 600;
    color: rgba(var(--i1d,38,38,38),1);
-   font-size: 12px;
-   line-height: 14px;
+   font-size: .8em;
+   /* line-height: 1em; */
    text-align: center;
    cursor: pointer;
    padding-left: 25%;
