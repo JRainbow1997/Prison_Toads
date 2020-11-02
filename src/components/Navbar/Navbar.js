@@ -1,6 +1,7 @@
 import React from 'react';
-import Logo from './images/Instagram.png';
+// import Logo from './images/Instagram.png';
 import Alex from './images/AGayFrog.png';
+import Toadsta from './images/Toadsta.PNG'
 //import Search from './images/search.png'
 //import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <img 
                     alt="Instagram"
                     class="insta" 
-                    src={ Logo }
+                    src={ Toadsta }
                 />
             </div>
             <div/>

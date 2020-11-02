@@ -37,9 +37,7 @@ export class Comment extends Component {
                 <form className="commentPost" onSubmit={this.addComment}>
                     <input className="comment" placeholder="Add a comment..." type="text" value={this.state.comment} onChange={this.handleInput} />
                     <button className="postButton"type="submit">Post</button> 
-                </form>
-                
-                
+                </form>        
             </div>
         )
     }

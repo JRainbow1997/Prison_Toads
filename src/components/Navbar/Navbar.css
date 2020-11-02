@@ -9,6 +9,7 @@ nav {
     position: fixed;
     z-index: 999;
 }
+
 .insta{
     width: 125px;
     padding-left: 44vh;
@@ -56,4 +57,20 @@ nav ul li{
     width: 100%;
     margin: 1%;
     border: 1px solid #CB3F98;
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width:414px) {
+    .search{
+        display: none;
+    }
+    .links {
+        margin-left: 5%;
+    }
+}
+
+.links svg {
+    width: 22px;
+    height: 22px;
 }

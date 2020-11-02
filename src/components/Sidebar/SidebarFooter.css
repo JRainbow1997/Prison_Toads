@@ -1,7 +1,3 @@
-.sidebar-footer {
-   
-}
-
 .footer-links > li {
    color: rgba(var(--edc,199,199,199),1);
    font-size: 11px;
@@ -20,3 +16,7 @@
    text-transform: uppercase;
    margin-top: 18px;
 }
+
+.footer-links {
+   padding-left: 0px;
+   }

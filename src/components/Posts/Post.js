@@ -15,7 +15,7 @@ const Post = (props) => {
     })
     return (
         <div>
-            <div className="Post">
+            <div className="mainPost">
                 <header>
                     <div className="Post-user-avatar">
                         <img src="userimage" src={props.userAvatatImg} alt="userimage" />
@@ -36,8 +36,9 @@ const Post = (props) => {
                                     <button type="submit" className="wartsbutton" onClick={props.addToWart}>🐸</button>
                                     <p className="FA"><FaRegComment /></p>
                                     <p className="FA"><FiSend /> </p>
+                                    <p className="bookmark"><FiBookmark /></p>
                                 </div>
-                                <p className="bookmark"><FiBookmark /></p>
+                                
                             </div>
                             <p className="wartsText"><span>{props.warts}</span>  Warts</p>
                             <div className="Post-caption" >

@@ -25,6 +25,7 @@ body {
   float: left;
   margin-right: 28px;
   max-width: 614px;
+  margin-bottom: 60px;
 }
 
 .navbar {
@@ -77,14 +78,18 @@ body {
   .post {
     width: 100%;
     padding: 0;
+    margin-bottom: 0px;
   }
   .stories {
     width: 100%;
-    padding: 0;
+    padding: 0px;
+    padding-top: 56px;
+    margin-bottom: 0px;
   }
   .navbar {
     width: 100%;
     padding: 0;
+    padding-top: 3%;
   }
 }
 
