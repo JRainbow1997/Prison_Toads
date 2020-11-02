@@ -83,15 +83,12 @@ h3 {
 }
 .bookmark {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     justify-self: end;
     align-items: center;
     padding-left: 55%;
     
 }
-
-
-
 .postDesciption {
     font-weight: 600;
 }
@@ -103,9 +100,3 @@ h3 {
     text-decoration: underline;
     cursor: pointer;
 }
-
-
-
-
-
-

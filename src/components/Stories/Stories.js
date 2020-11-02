@@ -43,29 +43,33 @@ class Stories extends Component {
         photoIndex: 0
     }
 
-    handleShowLargeImage = () => {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-        console.log("clicked");
-    }
-
     render() {
 
         const allStories = this.state.stories.map((story) => {
             return (
-                <Story storyImage={story.storyImage} onClick={this.handleShowLargeImage} />
+                <Story storyImage={story.storyImage} />
             )
         });
 
         const { photoIndex, isOpen } = this.state;
+
+        const openIndividualStory = () => {
+            this.setState([
+                ...this.state.stories,
+                {
+                    ...this.state.story,
+                    id: this.state.stories.length
+                }
+            ])
+            console.log(this.state.stories, this.state.story)
+        }
 
         return (
             <div className="main-stories-container">
                 <div className="stories-container">
                     <button className="stories-button" type="button" onClick={() => this.setState({
                         isOpen: true
-                    })}>                    
+                    })} onClick={openIndividualStory}>                    
                         <div className="image-frame">
                             { allStories }
                         </div>
