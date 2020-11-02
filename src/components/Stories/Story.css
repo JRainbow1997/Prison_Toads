@@ -1,0 +1,13 @@
+.storyImage{
+    width: 66px;
+    height: 66px;
+}
+.storyImage>src{
+    margin: 50px;
+}
+
+.storyimg {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

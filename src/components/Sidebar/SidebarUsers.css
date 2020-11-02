@@ -38,7 +38,7 @@ a:hover {
    padding-right: 10px;
    margin-top: 0;
 }
-button { /*FLEX ITEM*/
+#followButton { /*FLEX ITEM*/
    background: none;
    border: none;
    cursor: pointer;
