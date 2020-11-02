@@ -2,12 +2,13 @@ nav {
     background-color: white;
     display: flex;
     justify-content: space-around; 
-    padding-top: 0.75%;
+    padding-top: 1%;
     border-style: none none solid none;
     border-bottom:1px solid rgba(var(--b6a,219,219,219),1);
     width: 100%;
     position: fixed;
     z-index: 999;
+    align-items: center;
 }
 
 .insta{
@@ -67,6 +68,9 @@ nav ul li{
     }
     .links {
         margin-left: 5%;
+    }
+    nav {
+        padding-top: 3%;
     }
 }
 

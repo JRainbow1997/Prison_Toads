@@ -2,16 +2,19 @@
     display: flex;
     width: 100%;
     max-width: 600px;
-    max-height: 118vh;
+    min-width: 412px;  
 }
 .stories-container {
     display: flex;
     justify-content: center;
     overflow: scroll;
-    height: 15vh;
+    height: 118px;
+    min-height: 118px;
     padding: 1%;
     border-radius: 3px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
 }
 .stories-container::-webkit-scrollbar {
     display: none;
@@ -23,7 +26,7 @@
     border-radius: 50%;
 }
 .image-frame img {
-    width: 100%;
+    /* width: 100%; */
     padding: 3%;
     border-radius: 50%;
     background-image: linear-gradient( #CB3F98, #FBB37B);
@@ -31,4 +34,10 @@
 .stories-button {
     background-color: white;
     border: grey;
+}
+
+@media(max-width:414){
+    .main-stories-container{
+        height: 118px;
+    }
 }
