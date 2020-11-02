@@ -68,7 +68,6 @@ header{
     width: 100%;
 }
 
- 
 .wartsbutton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
@@ -139,7 +138,6 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 @media (max-width:414px) {
     .mainPost{
