@@ -68,7 +68,6 @@ header{
     width: 100%;
 }
 
- 
 .wartsbutton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
@@ -95,6 +94,7 @@ header{
     align-items: center;
     width: 100%;
 }
+
 .FA {
     padding: 0 10px 0 10px;
     margin: 0;
@@ -127,6 +127,7 @@ header{
 .Post-caption strong:hover {
     text-decoration: underline;
     cursor: pointer;
+
 }
 .Post-caption span {
     color: rgba(var(--fe0,0,55,107),1);
@@ -137,7 +138,6 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 @media (max-width:414px) {
     .mainPost{

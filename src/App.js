@@ -5,7 +5,6 @@ import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 import Wartbutton from './components/Posts/Wartbutton';
 import Footer from './components/Sidebar/SidebarFooter';
-
 class App extends Component {
 
 
