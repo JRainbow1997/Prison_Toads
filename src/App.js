@@ -1,22 +1,36 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import NavBar from './components/Navbar/Navbar'
 import Stories from './components/Stories/Stories';
 import Sidebar from './components/Sidebar/Sidebar';
 import Wartbutton from './components/Posts/Wartbutton';
-// import Comment from './components/Posts/Comment'
-
-
-
+import Footer from './components/Sidebar/SidebarFooter';
 class App extends Component {
 
 
-  render () {
+  render() {
     return (
       <div>
+        <div className="navbar">
+          <NavBar />
+        </div>
+
+        <div className="stories">
           <Stories />
-          <Sidebar />
-          <Wartbutton/>
-       </div>
+        </div>
+        <div className="main">
+          <div className="post">
+            <Wartbutton />
+          </div>
+
+          <div className="sidebar">
+            <Sidebar />
+          </div>
+        </div>
+        <div className="footer">
+        <Footer />
+        </div>
+      </div>
     );
   }
 }

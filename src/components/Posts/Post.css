@@ -1,65 +1,78 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
-* {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.post {
-    background-color: rgb(240, 240, 240);
-    height: 800px;
-    background-color: white;
-    border: 0.5px solid grey;
-    border-radius: 0.2em;
-    width: 50%;
-    height: 100%;
+.mainPost {
     display: flex;
     flex-direction: column;
-} 
-.icon {
-    width: 35px;
-    height: 35px;
-    border: 1px solid;
-    border-color: black;
-    border-radius: 30px;
-    display: flex;
-    margin: 0 20% 0 20%;
+    border-radius: 3px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: #fff;    
+    width: 100%;
+    max-width: 600px;
+    min-width: 414px;
+    margin-bottom: 60px;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(var(--i1d,38,38,38),1);
 }
 
-.postTop {
+header{
     display: flex;
-    justify-content: space-between    
+    align-items: center;
+    height: 60px;
 }
-h3 {
-    font-size: 15px;
-    display: flex;
-    line-height: 3;
-    font-family: 'Source Sans Pro', sans-serif;
+
+.Post-user-avatar {
+    width: 30px;
+    height: 30px;
+
+}
+.Post-user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #FAFAFA;
+    margin-left : 10px;
+}
+.Post-user-nickname {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    margin-left: 30px;
+
+}
+
+.Post-user-nickname:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .meatballMenu {
     max-width: 30px;
 }
-
-/* .postDropDown {
+.postDropDown {
     background-color: rgb(255, 255, 255, 0);
     border: none;
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-.postPicture {
-    width: 100%;
-    height: auto;
+}
+.button-meatball {
+    margin-left: auto;
 }
 
+.Post-image-bg {
+    background-color: #efefef;
+}
+.Post-image img {
+    display: block;
+    width: 100%;
+}
 
+ 
 .wartsbutton {
     background-color: rgb(255, 255, 255, 0);
     border: none;
-    font-size: 25px;
+    font-size: 25px;    
 }
 .wartsbutton:active {
     transform: scale(1.1);
@@ -67,36 +80,69 @@ h3 {
     animation-timing-function: cubic-bezier(.17, .89, .32, 1.49);
 }
 
-
-
 .postIcons {
     display: flex;
-    font-size:20px;
+    font-size:25px;
     width: 100%;
+    height: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }
 
 .icon1-3 {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
-.bookmark {
-    display: flex;
-    justify-content: flex-end;
-    justify-self: end;
-    align-items: center;
-    padding-left: 55%;
-    
-}
-.postDesciption {
-    font-weight: 600;
+
+.FA {
+    padding: 0 10px 0 10px;
+    margin: 0;
 }
 
-.username {
-    font-weight: 600;
+.bookmark{
+    margin-left: auto;
 }
-.username:hover {    
+
+.wartsText {
+    padding: 0px 10px 0 10px;
+    font-weight: 600; 
+    font-size: 14px;
+}
+
+.Post-caption {
+    padding: 0px 5px 0px 5px;
+    margin-left: 5px;
+}
+
+.Post-caption {
+    font-size: 14px;
+}
+
+.Post-caption strong {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.Post-caption strong:hover {
     text-decoration: underline;
     cursor: pointer;
+
+}
+.Post-caption span {
+    color: rgba(var(--fe0,0,55,107),1);
+    overflow-wrap: break-word;
+}
+
+.Post-caption span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width:414px) {
+    .mainPost{
+        margin-bottom: 0px;
+    }
 }
